@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block titulo %} Gestion Materias {% endblock %}
+
+{% block cuerpo %} 
+
+<h1>Gestionar Materias Zyanya Mireles </h1>
+
+{% for m in lasmaterias %}
+    <ol> {{m.codigo}}----- {{m.nombre}}----- {{m.creditos}} </ol>
+{% endfor %}
+
+{% endblock %}
